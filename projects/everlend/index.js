@@ -61,17 +61,9 @@ function tvl() {
         sdk.util.sumSingleBalance(balances, tokenMeta.name, totalPoolAmount)
       })
     );
-    console.log(balances);
     return balances;
   };
 }
-const obj = {
-  solana: {
-    tvl: tvl(),
-  }
-}
-obj.solana.tvl()
-
 
 module.exports = {
   timetravel: false,
